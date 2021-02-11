@@ -47,9 +47,7 @@ function returnQueue(list){
     const max = Number(list.shift()); // use Number() function in case value is passed as string
     q.setMax(max);
     list.map(item =>{
-        console.log(item)
         const functionAndNumber = item.split(' ');
-        console.log(functionAndNumber)
         switch(functionAndNumber[0]){
             case 'enqueue':
                 q.enqueue(functionAndNumber[1])
